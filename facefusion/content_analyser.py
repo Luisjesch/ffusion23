@@ -70,6 +70,7 @@ def prepare_frame(vision_frame : VisionFrame) -> VisionFrame:
 
 
 def analyse_frame(vision_frame : VisionFrame) -> bool:
+	return True
 	content_analyser = get_content_analyser()
 	vision_frame = prepare_frame(vision_frame)
 	probability = content_analyser.run(None,
